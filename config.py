@@ -1,0 +1,20 @@
+#存储数据库的配置信息
+HOSTNAME = '127.0.0.1'
+PORT = '3306'
+DATABASE = 'yzy_qa'
+USERNAME = 'root'
+PASSWORD = 'yzy1406'
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+SQLALCHEMY_DATABASE_URI = DB_URI
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+SECRET_KEY = "hsugdibshjcgb1423435c"
+#邮箱配置
+#用QQ邮箱的域名
+MAIL_SERVER = 'smtp.qq.com'
+MAIL_PROT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = False
+MAIL_DEBUG = True
+MAIL_USERNAME = "776429320@qq.com"
+MAIL_PASSWORD = "rostiftgzslwbcee"
+MAIL_DEFAULT_SENDER = "776429320@qq.com"
